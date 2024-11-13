@@ -61,7 +61,7 @@ export const projects: IProject[] = [
       "https://qr-code-generate-fc2scxnj9-vinit-modis-projects.vercel.app",
     github_url: "https://github.com/vinitmodi8722/qrCode_Generate",
     category: ["nextjs"],
-    key_techs: ["next js", "react", "javascript", "tailwind css"],
+    key_techs: ["next js", "javascript", "tailwind css"],
   },
   {
     name: "Enc-dec_Image",
@@ -70,8 +70,8 @@ export const projects: IProject[] = [
     image_path: "/aes_algo.jpg",
     deployed_url: "https://aes-image-enc-dec.vercel.app",
     github_url: "https://github.com/vinitmodi8722/AES_image_enc_dec",
-    category: ["javascript"],
-    key_techs: ["next js", "html", "css", "javascript", "tailwind css"],
+    category: ["javascript", "Html"],
+    key_techs: ["html", "css", "javascript", "AES-algorithm"],
   },
   {
     name: "VM_Store",
@@ -80,8 +80,14 @@ export const projects: IProject[] = [
     image_path: "/e-commerce.jpg",
     deployed_url: "https://vm-store-seven.vercel.app",
     github_url: "https://github.com/vinitmodi8722/vm-store",
-    category: ["javascript"],
-    key_techs: ["next js", "html", "css", "javascript", "tailwind css"],
+    category: ["react"],
+    key_techs: [
+      "react",
+      "css",
+      "javascript",
+      "tailwind css",
+      "strapi-paymentgatway",
+    ],
   },
   {
     name: "Blog",
@@ -89,7 +95,7 @@ export const projects: IProject[] = [
     image_path: "/blog_website.jpg",
     deployed_url: "https://senity-tailwind-blog-website.vercel.app",
     github_url: "https://github.com/vinitmodi8722/senity-tailwind-blog-website",
-    category: ["javascript"],
-    key_techs: ["next js", "html", "css", "javascript", "tailwind css"],
+    category: ["nextjs", "javascript"],
+    key_techs: ["sanity", "next js", "css", "javascript", "tailwind css"],
   },
 ];

@@ -15,11 +15,4 @@ export interface IProject {
   category: Category[];
   key_techs: string[];
 }
-export type Category =
-  | "react"
-  | "nextjs"
-  | "node"
-  | "express"
-  | "django"
-  | "mongo"
-  | "javascript";
+export type Category = "react" | "nextjs" | "Html" | "javascript";
