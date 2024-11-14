@@ -3,7 +3,7 @@ import { ISkill } from "../../../type";
 import { motion } from "framer-motion";
 
 const Bar: FunctionComponent<{ data: ISkill }> = ({
-  data: { Icon = "", level = "0%", name = "" } = {},
+  data: { level = "0%", name = "" } = {},
 }) => {
   const variants = {
     initial: {
@@ -28,7 +28,7 @@ const Bar: FunctionComponent<{ data: ISkill }> = ({
         initial="initial"
         animate="animate"
       >
-        <Icon className="mr-3" />
+        {/* <Icon className="mr-3" /> */}
         {name}
       </motion.div>
     </div>
