@@ -1,8 +1,9 @@
-import { AiFillGithub, AiFillLinkedin, AiFillYoutube } from "react-icons/ai";
+import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { GoLocation } from "react-icons/go";
 import { GiTie } from "react-icons/gi";
 import { useTheme } from "next-themes";
 import Image from "next/image";
+import { FaXTwitter } from "react-icons/fa6";
 
 const Sidebar = () => {
   const { theme, setTheme } = useTheme();
@@ -40,17 +41,16 @@ const Sidebar = () => {
       </a>
       {/* {social icons} */}
       <div className="flex justify-around w-9/12 my-5 text-green-500 md:w-full mx-auto">
-        <a href="https://youtube.com/vinitmodi">
-          <AiFillYoutube className="w-6 h-6 cursor-pointer" />
-        </a>
-        <a href="https://linkedin.com/vinitmodi">
-          <AiFillLinkedin className="w-6 h-6 cursor-pointer" />
-        </a>
-        <a href="https://github.com/vinitmodi">
+        <a href="https://github.com/vinitmodi8722">
           <AiFillGithub className="w-6 h-6 cursor-pointer " />
         </a>
+        <a href="https://www.linkedin.com/in/vinit-j-modi-935037201/">
+          <AiFillLinkedin className="w-6 h-6 cursor-pointer" />
+        </a>
+        <a href="https://x.com/vinitmodi_8722">
+          <FaXTwitter className="w-6 h-6 cursor-pointer" />
+        </a>
       </div>
-      {/* {address icons} */}
 
       <div
         className="py-4  my-5 bg-gray-200 dark:bg-dark-200 dark:text-white"
