@@ -19,6 +19,7 @@ const Bar: FunctionComponent<{ data: ISkill }> = ({
       },
     },
   };
+
   return (
     <div className="text-white bg-gray-200 rounded-full my-2 dark:bg-dark-200">
       <motion.div
