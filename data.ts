@@ -3,18 +3,23 @@ import { IProject, ISkill } from "./type";
 
 export const languages: ISkill[] = [
   {
-    name: "Python",
+    name: "React",
     level: "60%",
     Icon: BsCircleFill,
   },
   {
     name: "Java Script",
-    level: "65%",
+    level: "70%",
+    Icon: BsCircleFill,
+  },
+  {
+    name: "Next js",
+    level: "80%",
     Icon: BsCircleFill,
   },
   {
     name: "HTML",
-    level: "85%",
+    level: "90%",
     Icon: BsCircleFill,
   },
   {
@@ -23,13 +28,8 @@ export const languages: ISkill[] = [
     Icon: BsCircleFill,
   },
   {
-    name: "React",
-    level: "76%",
-    Icon: BsCircleFill,
-  },
-  {
-    name: "Next js",
-    level: "80%",
+    name: "Tailwind css",
+    level: "85%",
     Icon: BsCircleFill,
   },
 ];
@@ -37,17 +37,7 @@ export const languages: ISkill[] = [
 export const tools: ISkill[] = [
   {
     name: "figma",
-    level: "90%",
-    Icon: BsCircleFill,
-  },
-  {
-    name: "Photoshop",
-    level: "50%",
-    Icon: BsCircleFill,
-  },
-  {
-    name: "Autocad",
-    level: "60%",
+    level: "70%",
     Icon: BsCircleFill,
   },
 ];
@@ -81,13 +71,7 @@ export const projects: IProject[] = [
     deployed_url: "https://vm-store-seven.vercel.app",
     github_url: "https://github.com/vinitmodi8722/vm-store",
     category: ["react"],
-    key_techs: [
-      "react",
-      "css",
-      "javascript",
-      "tailwind css",
-      "strapi-paymentgatway",
-    ],
+    key_techs: ["react", "css", "javascript", "tailwind css"],
   },
   {
     name: "Blog",

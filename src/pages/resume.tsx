@@ -12,21 +12,26 @@ const resume = () => {
             <h5 className="my-2 text-xl font-bold">
               computer science engineering
             </h5>
-            <p className="font-semibold">Acadamy of Technology(2017-2021)</p>
+            <p className="font-semibold">
+              Sal institute of Technology (2023-on)
+            </p>
             <p className="my-3">
-              currently i am pursuing b.tech in computer science and engineering
-              from academy of technology, ahmedabad
+              currently i am pursuing B.tech in computer science and engineering
+              from Sal institute of Technology & engineering research,
+              Ahmedabad.
             </p>
           </div>
         </div>
         <div>
-          <h5 className="my-3 text-2xl font-bold">Experience</h5>
+          <h5 className="my-3 text-2xl font-bold">Experience as Intern</h5>
           <div>
-            <h5 className="my-2 text-xl font-bold">Software Engineer jr.</h5>
-            <p className="font-semibold">Tcs(2023-0n)</p>
+            <h5 className="my-2 text-xl font-bold">Web development</h5>
+            <p className="font-semibold">
+              Codage-Habitation(6/24-to-12/24) (6-month)
+            </p>
             <p className="my-3">
-              i have experience in team work, i was part of many projects, and
-              also i know diffrent languges.
+              i have experience in team work, i was part of many live projects,
+              and also i know diffrent languges.
             </p>
           </div>
         </div>
