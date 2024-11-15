@@ -20,7 +20,7 @@ const ProjectCard: FunctionComponent<{
     image_path = "",
     key_techs = [""],
     name = "",
-  },
+  } = {},
   setShowDetail,
   showDetail,
 }) => {
@@ -30,7 +30,7 @@ const ProjectCard: FunctionComponent<{
         src={image_path}
         alt={name}
         className="cursor-pointer"
-        onClick={() => setShowDetail(id)}
+        onClick={() => setShowDetail(id as number)}
         width={300}
         height={150}
         layout="responsive"
