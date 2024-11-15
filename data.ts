@@ -44,6 +44,7 @@ export const tools: ISkill[] = [
 
 export const projects: IProject[] = [
   {
+    id: 1,
     name: "Qr-scanner",
     description: "This website in you will generate own QR-code",
     image_path: "/qr_generate.jpg",
@@ -54,6 +55,7 @@ export const projects: IProject[] = [
     key_techs: ["next js", "javascript", "tailwind css"],
   },
   {
+    id: 2,
     name: "Enc-dec_Image",
     description:
       "This website in you will Encrypt and decrypt image using aes algorithm",
@@ -64,6 +66,7 @@ export const projects: IProject[] = [
     key_techs: ["html", "css", "javascript", "AES-algorithm"],
   },
   {
+    id: 3,
     name: "VM_Store",
     description:
       "This website in you will purchese watch and see collection of watches",
@@ -74,6 +77,7 @@ export const projects: IProject[] = [
     key_techs: ["react", "css", "javascript", "tailwind css"],
   },
   {
+    id: 4,
     name: "Blog",
     description: "This website in you can read blogs of Arts(paintings)",
     image_path: "/blog_website.jpg",

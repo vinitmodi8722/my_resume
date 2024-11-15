@@ -1,53 +1,64 @@
-import React, { FunctionComponent, useState } from "react";
+import React, { FunctionComponent } from "react";
 import { IProject } from "../../../type";
 import { AiFillGithub, AiFillProject } from "react-icons/ai";
 import { MdClose } from "react-icons/md";
 import Image from "next/image";
 
-const ProjectCard: FunctionComponent<{ project: IProject }> = ({
+const ProjectCard: FunctionComponent<{
+  project: IProject;
+  isOpen: boolean;
+  showDetail: null | number;
+  setShowDetail: (id: null | number) => void;
+  onClose: () => void;
+  onOpen: () => void;
+}> = ({
   project: {
+    id,
     deployed_url = "",
     description = "",
     github_url = "",
     image_path = "",
     key_techs = [""],
     name = "",
-  } = {},
+  },
+  setShowDetail,
+  showDetail,
 }) => {
-  const [showDetail, setShowDetail] = useState(false);
   return (
     <div>
       <Image
         src={image_path}
         alt={name}
         className="cursor-pointer"
-        onClick={() => setShowDetail(true)}
+        onClick={() => setShowDetail(id)}
         width={300}
         height={150}
         layout="responsive"
       />
-      <p className="my-2 text-center">{name}</p>
-      {showDetail && (
-        <div className="grid md:grid-cols-2 absolute p-2 top-0 left-0 z-10 w-full h-auto gap-x-12 text-black bg-gray-400 dark:text-white dark:bg-dark-100">
-          <div>
+      <p className="my-2 text-center relative hover:text-green-400 cursor-default">
+        {name}
+      </p>
+      {showDetail === id && (
+        <div className="grid md:grid-cols-2 absolute p-2 top-0 left-0 z-10 w-full h-auto gap-x-12 text-black bg-gray-300 rounded-lg dark:text-white dark:bg-gray-700">
+          <div className="bg-gray-300 p-4 rounded-lg text-black dark:bg-gray-700 dark:text-white max-w-md w-full relative">
             <Image
               src={image_path}
               width={400}
               height={150}
               alt={name}
-              className="rounded-lg"
+              className="rounded-lg border-2 border-dark-200 dark:border-gray-100 p-1 "
             />
             <div className="flex justify-center my-4 space-x-3">
               <a
                 href={github_url}
-                className="flex items-center px-4 py-2 space-x-3 text-lg  bg-gray-200 dark:bg-dark-200"
+                className="flex items-center px-4 py-2 space-x-3 text-lg bg-gray-200 dark:bg-dark-200"
               >
                 <AiFillGithub /> <span>Github</span>
               </a>
               {deployed_url && (
                 <a
                   href={deployed_url}
-                  className="flex items-center px-4 py-2 space-x-3 text-lg  bg-gray-200 dark:bg-dark-200"
+                  className="flex items-center px-4 py-2 space-x-3 text-lg bg-gray-200 dark:bg-dark-200"
                 >
                   <AiFillProject /> <span>Project view</span>
                 </a>
@@ -69,8 +80,8 @@ const ProjectCard: FunctionComponent<{ project: IProject }> = ({
             </div>
           </div>
           <button
-            onClick={() => setShowDetail(false)}
-            className="absolute p-1 bg-gray-200 rounded-full top-3 right-3  focus:outline-none dark:bg-dark-200"
+            onClick={() => setShowDetail(null)}
+            className="absolute p-1 bg-gray-200 rounded-full top-3 right-3 focus:outline-none dark:bg-dark-200"
           >
             <MdClose size={30} />
           </button>

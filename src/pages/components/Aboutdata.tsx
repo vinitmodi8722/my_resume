@@ -7,7 +7,7 @@ import { SiSanity } from "react-icons/si";
 const Aboutdata = () => {
   return (
     <>
-      <div className="bg-gray-200 dark:bg-dark-200 dark:text-white rounded-lg lg:col-span-1 h-[80px] p-2">
+      <div className="bg-gray-200 dark:bg-dark-200 dark:text-white rounded-lg lg:col-span-1 h-[100px] items-center flex  p-2 ">
         <div className="flex items-center">
           <div className="text-green-400 h-[30px] w-[30px] mr-3">
             <RiComputerLine className=" h-[30px] w-[30px]" />
@@ -28,7 +28,7 @@ const Aboutdata = () => {
         </div>
       </div>
 
-      <div className="bg-gray-200 dark:bg-dark-200 dark:text-white rounded-lg lg:col-span-1 h-[80px] p-2">
+      <div className="bg-gray-200 dark:bg-dark-200 dark:text-white rounded-lg lg:col-span-1 h-[100px] items-center flex p-2">
         <div className="flex items-center">
           <div className="text-green-400 h-[30px] w-[30px] mr-3">
             <FaServer className=" h-[30px] w-[30px]" />
@@ -45,7 +45,7 @@ const Aboutdata = () => {
         </div>
       </div>
 
-      <div className="bg-gray-200 dark:bg-dark-200 dark:text-white rounded-lg lg:col-span-1 h-[80px] p-2">
+      <div className="bg-gray-200 dark:bg-dark-200 dark:text-white rounded-lg lg:col-span-1 h-[100px] items-center flex p-2">
         <div className="flex items-center">
           <div className="text-green-400 h-[30px] w-[30px] mr-3">
             <AiTwotoneApi className=" h-[30px] w-[30px]" />
@@ -57,13 +57,13 @@ const Aboutdata = () => {
             </div>
             <div className="text-sm text-justify font-semibold">
               I can develop robust REST API using
-              <span className="font-bold"> Node Api</span>
+              <span className="font-bold"> Node Api</span>.
             </div>
           </div>
         </div>
       </div>
 
-      <div className="bg-gray-200 dark:bg-dark-200 dark:text-white rounded-lg lg:col-span-1 h-[80px] p-2">
+      <div className="bg-gray-200 dark:bg-dark-200 dark:text-white rounded-lg lg:col-span-1 h-[100px] items-center flex p-2">
         <div className="flex items-center">
           <div className="text-green-400 h-[30px] w-[30px] mr-3">
             <SiSanity className=" h-[30px] w-[30px]" />
