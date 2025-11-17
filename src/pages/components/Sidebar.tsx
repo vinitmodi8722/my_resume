@@ -39,7 +39,6 @@ const Sidebar = () => {
         <GiTie className="w-6 h-6" />
         Download Resume
       </a>
-      {/* {social icons} */}
       <div className="flex justify-around w-9/12 my-5 text-green-500 md:w-full mx-auto">
         <a href="https://github.com/vinitmodi8722">
           <AiFillGithub className="w-6 h-6 cursor-pointer " />
@@ -63,12 +62,12 @@ const Sidebar = () => {
         <p className="my-2">vinit.modi8722@gmail.com</p>
         <p className="my-2">9316*****3</p>
       </div>
-      <button
-        className="bg-gradient-to-r from-green-400 to-blue-400 w-8/12 rounded-full py-2 px-5 text-white my-2 focus:outline-none"
-        onClick={() => window.open("mailto:vinit.modi8722@gmail.com")}
+      <a
+        href="mailto:vinit.modi8722@gmail.com"
+        className="bg-gradient-to-r from-green-400 to-blue-400 w-8/12 rounded-full py-2 px-5 text-white my-2 inline-flex items-center justify-center focus:outline-none"
       >
         Email me
-      </button>
+      </a>
       <button
         onClick={changeTheme}
         className="bg-gradient-to-r from-green-400 to-blue-400 w-8/12 rounded-full py-2 px-5 text-white my-2"
