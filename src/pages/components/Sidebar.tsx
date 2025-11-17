@@ -33,8 +33,8 @@ const Sidebar = () => {
       </p>
       <a
         className="px-2 py-1 my-3 bg-gray-200 rounded-full flex items-center justify-center dark:bg-dark-200 dark:text-white"
-        href="/vinit.jpg"
-        download="vinitmodi_Resume.jpg"
+        href="/Vinit_Modi_Resume.pdf"
+        download="vinitmodi_Resume.pdf"
       >
         <GiTie className="w-6 h-6" />
         Download Resume
